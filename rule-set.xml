@@ -4,7 +4,7 @@
   <rules>
     <rule groupId="net.apmoller.crb.apmt.microservices.hbp.update.berth.plan.producer" artifactId="apmt-hbp-update-berth-plan-producer-service" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">(?i).*[-_\.](PR|feature)[-_\.]?[0-9]*</ignoreVersion>
+        <ignoreVersion type="regex">(\d+\.\d+\.\d+)-(PR|feature)-(\d+)</ignoreVersion>
       </ignoreVersions>
     </rule>
   </rules>
