@@ -8,8 +8,8 @@
   <rules>
     <rule groupId="net.apmoller.crb.apmt.microservices.hbp.update.berth.plan.producer" artifactId="apmt-hbp-update-berth-plan-producer-service" comparisonMethod="maven">
       <ignoreVersions>
-        <ignoreVersion type="regex">.*-feature-*</ignoreVersion>
-        <ignoreVersion type="regex">.*-PR-*</ignoreVersion>
+        <ignoreVersion type="regex">(?i).*[-_\.](PR|feature)[-_\.]?[0-9]*</ignoreVersion>
+        <ignoreVersion type="regex">*.*-PR-*</ignoreVersion>
       </ignoreVersions>
     </rule>
   </rules>
